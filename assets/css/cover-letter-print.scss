@@ -1,0 +1,692 @@
+---
+---
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+/* Enable bullets for unordered lists in print */
+#main-content ul {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 20px;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* Use screen fonts for headers */
+header,
+header h1,
+header h2,
+#main-content h1,
+#main-content h2,
+#main-content h3,
+#main-content h4,
+#main-content h5,
+#main-content h6 {
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
+a {
+  font-weight: bold;
+  color: #0066cc;
+}
+
+header {
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #004080;
+  letter-spacing: -1px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif !important;
+}
+
+header h2 {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #aaa;
+  letter-spacing: -1px;
+}
+#downloads {
+  display: none;
+}
+#main_content {
+  padding-top: 20px;
+}
+
+code, pre {
+  margin-bottom: 30px;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+  font-size: 12px;
+  color: #222;
+}
+
+code {
+  padding: 0 3px;
+}
+
+pre {
+  padding: 20px;
+  overflow: auto;
+  border: solid 1px #ddd;
+}
+pre code {
+  padding: 0;
+}
+
+ul, ol, dl {
+  margin-bottom: 10px;
+}
+
+
+/* COMMON STYLES */
+
+table {
+  width: 100%;
+  border: 1px solid #ebebeb;
+}
+
+th {
+  font-weight: 500;
+}
+
+td {
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid #ebebeb;
+}
+
+form {
+  padding: 20px;
+  background: #f2f2f2;
+
+}
+
+
+/* GENERAL ELEMENT TYPE STYLES */
+
+h1 {
+  font-size: 2.8em;
+}
+
+h2 {
+  margin-bottom: 0px;
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: normal;
+  color: #303030;
+}
+
+h3 {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #004080;
+}
+
+h5 {
+  font-size: 1em;
+  color: #303030;
+}
+
+h6 {
+  font-size: .8em;
+  color: #303030;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a {
+  font-weight: 400;
+}
+
+blockquote {
+  padding: 0 0 0 30px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  border-left: 10px solid #e9e9e9;
+}
+
+ul li {
+  padding-left: 5px;
+  list-style-position: inside;
+  list-style: disc;
+}
+
+/* Remove bullet icons from nested lists while keeping indentation */
+ul ul li {
+  list-style: none;
+}
+
+ol li {
+  padding-left: 3px;
+  list-style-position: inside;
+  list-style: decimal;
+}
+
+dl dd {
+  font-style: italic;
+  font-weight: 100;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+footer a {
+  color: #666;
+}
+
+/* MISC */
+.clearfix:after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  content: '.';
+}
+
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+/* PRINT SPECIFIC STYLES */
+
+/* Layout adjustments for print */
+#content-wrapper .inner {
+  display: block;
+}
+
+#sidebar {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#main-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact section - compact header format */
+.contact {
+  margin-bottom: 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid grey;
+  page-break-inside: avoid;
+}
+
+.contact h1 {
+  display: none;
+}
+
+.contact h2 {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  margin: 0 10px 0 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.contact h2::after {
+  content: ":";
+  margin-right: 5px;
+}
+
+.contact p {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 35px 8px 0;
+  font-weight: normal;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.contact a {
+  color: #0066cc;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* LinkedIn container adjustments */
+.linkedin-container {
+  display: inline-block;
+  margin: 0 35px 8px 0 !important;
+}
+
+.linkedin-profile-link {
+  display: inline-block !important;
+  font-size: 11px !important;
+  margin: 0 !important;
+}
+
+/* Hide LinkedIn badge image and content in print */
+.linkedin-container img,
+.linkedin-container svg,
+.linkedin-container div,
+.profile-badge__header,
+.profile-badge,
+.profile-badge__header--light {
+  display: none !important;
+}
+
+/* Hide all linkedin-container children except the first link */
+.linkedin-container > *:not(a) {
+  display: none !important;
+}
+
+/* Show print-only elements in print */
+.print-only {
+  display: inline-block !important;
+}
+
+/* Set font-weight to normal for summary--objective */
+#summary {
+  font-weight: normal;
+}
+
+#professional-experience {
+  font-weight: normal;
+}
+
+#technical-capabilities--skills {
+  font-weight: normal;
+}
+
+#education--development {
+  font-weight: normal;
+}
+
+/* Option 1: Hide LinkedIn section entirely
+.contact h2:nth-of-type(3),
+.linkedin-container {
+  display: none;
+}
+*/
+
+/* Option 2: Show name instead of URL */
+.linkedin-profile-link {
+  color: #0066cc !important;
+}
+.contact h2:nth-of-type(3) {
+  display: inline-block;
+}
+
+/* Page break rules for sections */
+#main-content h1,
+#main-content h2,
+#main-content h3 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+/* Force page break before major sections (h1) except first two (Summary and Professional Experience) */
+#main-content h1:nth-of-type(n+3) {
+  page-break-before: always;
+}
+
+/* Force page break before job sections (h2) except first one */
+#main-content h2:not(:first-of-type):not(:nth-of-type(4)) {
+  page-break-before: always;
+}
+
+/* Ensure job sections (h2) have proper spacing
+#main-content h2 {
+}
+*/
+
+#main-content p,
+#main-content li {
+  page-break-inside: avoid;
+}
+
+#main-content ul,
+#main-content ol {
+  page-break-inside: avoid;
+}
+
+/* Section-based page breaks */
+#main-content > div {
+  page-break-inside: avoid;
+}
+
+/* Projects and Certifications sections */
+#sidebar:nth-of-type(2) {
+  page-break-before: always;
+}
+
+/* Image handling - hide images, show alt text */
+img {
+  display: none;
+}
+
+/* Show alt text for images */
+img::after {
+  display: block;
+  content: attr(alt);
+  font-size: 11px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Certification links - show as text */
+.certifications-section a {
+  display: block;
+  font-size: 11px;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.certifications-section a::before {
+  content: "• ";
+}
+
+/* Hide salesiq and other non-essential elements */
+#salesiq,
+footer,
+#zsiqscript,
+script[src*="salesiq"],
+script[src*="zohopublic"],
+.zoho,
+.salesiq,
+[class*="zoho"],
+[class*="salesiq"],
+[class*="chat"],
+[class*="widget"],
+.zsiq-float-tooltip,
+[id*="zsiq"] {
+  display: none !important;
+}
+
+/* Hide projects and certifications sections in print */
+#sidebar:nth-of-type(2),
+.projects-section,
+.certifications-section {
+  display: none !important;
+}
+
+/* Header adjustments for print */
+header {
+  padding-top: 10px;
+  border-bottom: 1px solid grey;
+}
+
+header h1 {
+  font-family: "Montserrat Light", Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 64px !important;
+  font-weight: normal !important;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+header h2 {
+  font-size: 24px !important;
+  font-weight: normal !important;
+}
+
+/* Use the same title font treatment for the LinkedIn text reference */
+.linkedin-profile-link {
+  font-family: "Montserrat Light", Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+/* Tighten Skills formatting for print */
+.skills,
+#skills,
+.skills-section,
+section.skills {
+  margin-bottom: 10px !important;
+}
+
+.skills p,
+#skills p,
+.skills-section p,
+section.skills p {
+  margin: 0 0 4px 0 !important;
+  line-height: 1.25 !important;
+}
+
+.skills ul,
+#skills ul,
+.skills-section ul,
+section.skills ul {
+  margin: 0 0 6px 0 !important;
+}
+
+.skills li,
+#skills li,
+.skills-section li,
+section.skills li {
+  margin: 0 0 2px 0 !important;
+  padding-left: 10px !important;
+  line-height: 1.25 !important;
+}
+
+/* Keep each job together where the browser can; allow natural breaks only if a job is too tall */
+.job,
+.job-entry,
+.experience-item,
+.work-experience-item,
+.resume-job,
+.employment-item,
+section.job,
+article.job {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 12px;
+}
+
+.job h3,
+.job-entry h3,
+.experience-item h3,
+.work-experience-item h3,
+.resume-job h3,
+.employment-item h3 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* Fallback for unwrapped resume markup: keep job headings attached to following content */
+#main-content h3,
+#main-content h4 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* Keep bullet groups together better within each job */
+#main-content h3 + p,
+#main-content h3 + ul,
+#main-content h4 + p,
+#main-content h4 + ul {
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+/* Keep print output clean: do not expose raw URLs after links */
+a[href]::after {
+  content: none !important;
+}
+
+/* Hide all horizontal rules except the first one in print */
+#main-content hr:not(:first-of-type) {
+  display: none;
+}
+
+.tech {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 0.35em;
+}
+
+.tech:not(:last-child)::after {
+  content: "·";
+  margin-left: 0.35em;
+}
+
+/* COVER LETTER SPECIFIC ADJUSTMENTS */
+
+/* Hide second sidebar (projects and certifications) but keep first sidebar (contact info) */
+#sidebar:nth-of-type(2) {
+  display: none !important;
+}
+
+/* Remove ALL page break logic for cover letter */
+* {
+  page-break-before: auto !important;
+  page-break-after: auto !important;
+  page-break-inside: auto !important;
+  break-before: auto !important;
+  break-after: auto !important;
+  break-inside: auto !important;
+}
+
+/* Specific overrides for elements that had forced breaks */
+#main-content h1:nth-of-type(n+3),
+#main-content h2:not(:first-of-type):not(:nth-of-type(4)),
+#sidebar:nth-of-type(2) {
+  page-break-before: auto !important;
+  break-before: auto !important;
+}
+
+/* Override body font size and line-height for cover letter */
+body {
+  font-size: 10px !important;
+  line-height: 1.0 !important;
+}
+
+/* Tighten heading spacing */
+#main-content h1 {
+  margin-top: 12px !important;
+  margin-bottom: 6px !important;
+}
+
+#main-content h2 {
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+}
+
+#main-content h3 {
+  margin-top: 8px !important;
+  margin-bottom: 3px !important;
+}
+
+#main-content h4 {
+  margin-top: 6px !important;
+  margin-bottom: 3px !important;
+}
+
+/* Tighten paragraph spacing */
+#main-content p {
+  margin-bottom: 6px !important;
+  line-height: 1.35 !important;
+}
+
+/* Tighten horizontal rule spacing */
+#main-content hr {
+  margin: 6px 0 !important;
+}
+
+/* Tighten list spacing */
+#main-content ul,
+#main-content ol {
+  margin-bottom: 6px !important;
+  margin-top: 3px !important;
+}
+
+#main-content li {
+  margin-bottom: 2px !important;
+  line-height: 1.25 !important;
+}
+
+/* Tighten contact section */
+.contact {
+  margin-bottom: 6px !important;
+  padding: 6px 0 !important;
+}
+
+.contact p {
+  margin: 0 25px 4px 0 !important;
+}
+
+/* Force single page if possible */
+@page {
+  margin: 0.5in;
+}
+
+/* Prevent page breaks within cover letter */
+#main-content {
+  page-break-inside: avoid;
+}

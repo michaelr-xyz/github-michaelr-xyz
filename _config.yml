@@ -17,3 +17,9 @@ url:  https://michaelr.xyz
 baseurl: ''
 
 language: en-US
+
+# Exclude cover letter files from live site
+exclude:
+  - cover-letter.md
+  - _layouts/cover-letter.html
+  - assets/css/cover-letter-print.scss
