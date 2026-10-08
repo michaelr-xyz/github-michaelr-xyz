@@ -4,11 +4,11 @@ layout: cover-letter
 
 [Date]
 
-[Recipient Name]
-[Company Name]
-[Street Address]
-[City, State ZIP]
-[Email Address]
+[Recipient Name]  
+[Company Name]  
+[Street Address]  
+[City, State ZIP]  
+[Email Address]  
 
 ## Re: [Position Title]
 
