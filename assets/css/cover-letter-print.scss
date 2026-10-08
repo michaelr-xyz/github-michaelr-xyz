@@ -1,6 +1,9 @@
 ---
 ---
 
+/* Import Montserrat font for signature */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -175,7 +178,7 @@ h3 {
 
 h4 {
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   color: #004080;
 }
@@ -627,6 +630,22 @@ body {
   line-height: 1.0 !important;
 }
 
+/* Ensure all contact links have the same color and style */
+.contact a,
+.linkedin-profile-link {
+  color: #0066cc !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  display: inline-block !important;
+  margin-bottom: inherit !important;
+  text-decoration: none !important;
+}
+
+.linkedin-container {
+  font-family: inherit !important;
+  margin-bottom: inherit !important;
+}
+
 /* Tighten heading spacing */
 #main-content h1 {
   margin-top: 12px !important;
@@ -646,6 +665,7 @@ body {
 #main-content h4 {
   margin-top: 6px !important;
   margin-bottom: 3px !important;
+  font-size: 14px !important;
 }
 
 /* Tighten paragraph spacing */
